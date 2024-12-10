@@ -1,6 +1,6 @@
 {% set name = "ciso8601" %}
-{% set version = "2.3.1" %}
-{% set sha256 = "3212c7ffe5d8080270548b5f2692ffd2039683b6628a8d2ad456122cc5793c4c" %}
+{% set version = "2.3.2" %}
+{% set sha256 = "ec1616969aa46c51310b196022e5d3926f8d3fa52b80ec17f6b4133623bd5434" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 
