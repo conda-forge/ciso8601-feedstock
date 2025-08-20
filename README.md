@@ -13,7 +13,6 @@ Development: https://github.com/closeio/ciso8601
 
 ciso8601 converts ISO8601 date time strings into Python datetime objects.
 
-
 Current build status
 ====================
 
